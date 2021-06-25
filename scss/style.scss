@@ -1,0 +1,246 @@
+*{
+padding: 0;
+margin: 0;
+}
+/** Mixins  setup**/
+@mixin size($width, $height) {
+height: $height;
+width: $width;    
+}
+/** Variables setup **/
+$popularGradient: linear-gradient(180deg, #e1c8bdab 0%, rgba(255,255,255,1) 100%);
+$backgroundColor:#e1c8bdab ;
+$brown:rgb(71, 44, 44);
+$popularShadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+/** INDEX DESING **/
+#imgLogo{
+@include size(180px, 180px);
+margin-left: 30px;
+margin-top: 1px;
+transition: 1s;
+}
+#imgLogo:hover{
+@include size(184px, 184px);
+}
+#imgBackground{
+width: 100%;
+min-height: 100%;
+}
+/** MENU NAVEGACION **/
+header{
+position: absolute;
+display: flex;
+align-items: center;
+width: 100%;
+justify-content:space-evenly ;
+font-family: 'Mate SC', serif;
+font-weight: 800;
+}
+ul li:hover ul{
+display: block;
+position: absolute;
+padding: 0;   
+} 
+.nav__submenu{
+color:$brown;
+text-align: center;
+text-decoration: none;
+}
+@media (max-width:1050px){
+    header{
+    flex-direction: column;
+    position: relative;
+    background: $backgroundColor;
+    background: $popularGradient; 
+    }
+    .noIndex{
+    flex-direction: column;
+    position: relative;
+    }
+    .nav__position{
+    width: 100%;
+    }
+    .nav__position:hover{
+    background: #e1c8bd42;
+    background: linear-gradient(90deg, $backgroundColor 0%, rgba(255,255,255,1) 100%); 
+    color: pink;
+    }
+    .seccion__background{
+    display: block;
+    }
+    #imgBackground{
+    display: block;
+    }
+}
+#search{
+border-radius: 9px;
+margin:6px;
+background-color: rgba(105, 81, 81, 0.466);
+width: 180px;
+margin: 6px;
+color: white;
+padding: 2px;
+}
+#search::placeholder{
+color: white;
+}
+.fa-search{
+margin: 30px;
+color: $brown;
+}
+.icon{
+color: $brown;
+border: 2px solid $brown;
+padding: 4px;
+background-color: white;
+border-radius: 70px;
+transition: 1s;
+}
+.icon:hover{
+color: white;
+background-color:$brown;
+}
+/** RECETAS DESING **/
+h1{
+text-align: center;
+font-family: 'Prata', serif;
+font-weight: 550;
+}
+.contenedor__principal{
+height: 100%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-items: center;
+}
+.recetas__opciones{
+@include size(330px, 550px);
+background-color: #a2d2ff81;
+border-radius: 12px;
+margin: 10px;
+transition: 1.3s;
+box-shadow: $popularShadow;
+}
+.recetas__informacion{
+    > h2{
+        color: black;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Prata', serif;
+        text-align: center;
+    }
+}
+.imgRecetas{
+@include size(330px, 350px);
+border-top-left-radius: 13px;
+border-top-right-radius: 13px;
+}
+.recetas__informacion{
+margin-left: 5px;
+}
+.informacion__boton{
+border: none;
+@include size(100px, 40px);
+background: rgba(148,187,233,1);
+color: white;
+font-weight: 500;
+cursor: pointer;
+border-radius: 13px;
+box-shadow: $popularShadow;
+}
+.informacion__boton:hover{
+background: rgb(101, 161, 230);
+@include size(105px, 43px);   
+}
+.recetas__informacion--boton{
+display: flex;
+justify-content: center;
+}
+/** FOOTER DESING **/
+.footer__informacion{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+background-color: rgba(223, 213, 203, 0.404);
+position: relative;
+box-shadow: 12px 0 16px 0 rgba(0,0,0,0.24);
+}
+p {
+    > i{
+        margin: 4px;
+    }
+}
+h6 {
+    > i{
+        margin: 4px;
+    }
+}
+.informacion__columnas{
+margin: 9px;
+}
+.columnas__locales{
+display: flex;
+flex-direction: row;
+margin: auto;
+}
+.columnas__locales{
+    > div{
+        margin: 10px;
+    }
+}
+/** Derechos de autor **/
+
+.footer__informacion--autor {
+    > p{
+        height: 3px;
+        background-color: white;
+        text-align: center;
+        font-size: small;
+    }
+}
+/** ----------------CONTACTO----------------- **/
+@import "contacto";
+/** ----------------PRODUCTOS----------------- **/
+@import "productos";
+/** ----------------LOCALES----------------- **/
+@import "locales";
+/** ----------------USER LOGIN----------------- **/
+
+.seccion__user{
+@include size(100%, 100%);
+position: absolute;
+display: flex;
+justify-content: center;
+}
+@media (max-width: 1050px){
+    .seccion__user{
+    position: relative;
+    }
+}
+.user__inputs{
+display: flex;
+flex-direction: column;
+margin: 12px;
+    label{
+        font-weight: 500;
+    }
+}
+.inputs__completar{
+border: none;
+padding: 10px;
+border-radius: 15px;
+outline: none;
+transition: 0.999s;
+}
+.inputs__completar:hover{
+color: white;
+background-color:$brown;
+}
+#ingresar{
+margin: 8px;
+width: 95%;
+padding: 20px;
+font-weight: 500;
+color: white;
+background-color:$brown;
+box-shadow:$popularShadow;
+}

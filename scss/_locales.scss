@@ -1,0 +1,34 @@
+.section__locales{
+display: flex;
+height: 100%;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+.carousel{
+width: 750px;
+justify-content: center;
+margin-top: 50px;
+}
+
+.locales__contacto{
+margin: 30px;
+align-items: center;
+}
+.contacto__opciones{
+margin-right: 25px;
+border: 1px solid rgba(0, 0, 0, 0.103);
+}
+.contacto__opciones {
+    div{
+        width: 300px;
+    }
+    h5{
+        text-align: center;
+    }
+}
+.opciones__items{
+    margin-left: 10px;
+}
+
+

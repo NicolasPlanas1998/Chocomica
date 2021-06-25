@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta keywords="productos, pasteleria, tortas, donas, muffins, muffin, dulce, fiesta, cumpleaños">
+        <meta description= "Aquí podras encontrar los mejores productos de pasteleria de Argentina">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Prata&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/31bc8b6bf0.js" crossorigin="anonymous"></script>
+        <title>Chocomica | Productos </title>
+    </head>
+<body>
+    <header class="noIndex">
+        <a href="index.html">
+            <img id="imgLogo" src="images/logo.png" alt="marca Chocomica tienda de tortas">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light nav__position">
+            <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" aria-expanded="false">
+                            PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li><a class="nav__submenu " href="productos.html">Tortas</a></li>
+                                <li><a class="nav__submenu" href="productos.html">Muffins</a></li>
+                                <li><a class="nav__submenu" href="productos.html">Donas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">LOCALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <i class="fas fa-search">
+                <input type="search" id="search" placeholder="Buscar...">
+            </i>
+            <a href="user.html"><i class="fas fa-user icon"></i></a>
+        </div>
+    </header>
+    <!-- Catalogo de productos -->
+    <section class="seccion__catalogo">
+        <h1 id="tituloCatalogo">- PRODUCTOS -</h1>
+        <h4 id="subtituloCatalogo">¡Ofrecemos catering para eventos!</h4>
+        <div class="contenedor__principal seccion3">
+            <div class="seccion_productos ">
+                <a class="links__productos" href="#donas">
+                    <img class="imgProductos" src="images/opcionProductosDonas.png" alt="emoji de donas">
+                    <h2 class="titulos__productos">DONAS</h2>
+                </a>
+            </div>
+            <div class="seccion_productos ">
+                <a class="links__productos" href="#muffins">
+                    <img class="imgProductos" src="images/opcionProductosmuffins.png" alt="emojo de Muffins">
+                    <h2 class="titulos__productos">MUFFINS</h2>
+                </a>
+            </div>
+            <div class="seccion_productos ">
+                <a class="links__productos" href="#tortas">
+                    <img class="imgProductos" src="images/opcionProductosTortas.png" alt="emojo de tortas">
+                    <h2 class="titulos__productos">TORTAS</h2>
+                </a>
+            </div>
+        </div >
+    </section>
+    <!-- Sugerencias de productos -->
+    <div class="contenedorFlex">
+        <img class="fondoTituloSugerencias" src="images/fondoTitulo.png" alt="fondo acuarela del titulo" >
+        <h2 class="subtituloSugerencias">Nuestras sugerencias</h2>
+    </div>
+    <div class="contenedorFlex">
+        <div class="contenedorFlex contenedor__sugerencias">
+            <div class="sugerencias__items shadow p-3 mb-5 bg-body rounded">
+                <h4>Tortas más vendidas</h4>
+                <p> – Brownie, con dulce de leche, mousse y rulos de chocolates.
+                <p> – Brownie, dulce de leche, mousse y merengur.</p>
+                <p> – Brownie, dulce de leche, crema, merenguitos y frutillas.
+                <p> – Torta 3 mousses.</p>
+                <p> – Sacher clásica (rellena con dulce de damasco)</p>
+                <p> – Torta húmeda de chocolate con diferentes rellenos (dulce de leche, crema y frutillas, mousse de chocolate o crema y frutos rojos).</p>
+                <p> – Torta amarga (base soufflé de chocolate amargo, dulce de frambuesa, crema y frutos rojos).</p>
+                <p> – Bombón, base de chocolate con nueces (sin harina), dulce de leche, crema y baño de chocolate.</p>
+            </div>     
+            <div class="sugerencias__items sugerencias__items--right shadow p-3 mb-5 bg-body rounded">
+                <h4>Clasicas Argentinas</h4>
+                <p> – Lemon pie</p>
+                <p> – Torta tiramisú</p>
+                <p> – Torta soufflé de ricota</p>
+                <p> – Pasta frola</p>
+                <p> – Mil hojas de dulce de leche</p>
+                <p> – Torta de coco y dulce de leche</p>
+                <p> – Torta crema moka</p>
+                <p> – Tarta de frutillas con dulce de leche y crema o crema pastelera</p>
+                <p> – Tarta de frutos rojos con dulce de leche y crema o crema pastelera o crema de limón</p>
+                <p> – Tarta de almendras, con crema pastelera, daditos de manzana y manzanas acarameladas</p>
+                <p> – Tarta de almendras, dulce de leche, crema o crema pastelera, frutos rojos o frutillas o ciruelas sarteneadas</p>
+                <p> – Tarta de almendras, crema de chocolate blanco y frutillas</p>               
+            </div>
+        </div>
+    </div>
+    <!-- Opciones de productos -->
+    <section class="contenedor__productos">
+        <div class="productos" id="donas">
+            <!------------------------SETUP DONAS--------------------->     
+            <h2 class="productos__subtitulo">DONAS</h2>
+            <div  class="productos__opcion container-fluid">
+                <div class="opcion__texto col-lg-5 col-md-12">
+                    <div class="texto__compra">
+                        <h3>Creamy</h3>
+                        <h2>$100</h2>
+                    </div>
+                    <p class="texto__caracteristicas">La clasica Dona de nuestra casa, una de las primeras
+                        en ser presentada a nuestros comensales, caracterizada por su suavidad y su relleno de 
+                        crema pastelera
+                    </p>
+                    <div class="recetas__informacion--boton">
+                    <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                    </div>
+                </div>
+                <div>
+                <!-- Carrousel de productos -->
+                    <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/creamy-dona.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/creamy-dona2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div  class="productos__opcion container-fluid">
+                <div class="opcion__texto col-lg-5 col-md-12">
+                    <div class="texto__compra">
+                        <h3>Donutella</h3>
+                        <h2>$110</h2>
+                    </div>
+                    <p class="texto__caracteristicas">De la mano del famoso chocolate de avellanas traemos a la nueva
+                        Donutella, una bomba de sabor y de dulzura, cubierta por chocolate y rellena de nutella
+                    </p>
+                    <div class="recetas__informacion--boton">
+                    <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                    </div>
+                </div>
+                <div>
+                <!-- Carrousel de productos -->
+                    <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/nutella-dona.jpg" class="d-block w-100 " alt="Imagenes de nuestros productos de nutella">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nutella-dona2.jpg" class="d-block w-100 " alt="Imagenes de nuestros productos de nutella">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="productos" >
+            <!------------------------SETUP MUFFIN--------------------->     
+            <h2 class="productos__subtitulo" id="muffins">MUFFINS</h2>
+            <div  class="productos__opcion container-fluid">
+                <div class="opcion__texto col-lg-5 col-md-12">
+                    <div class="texto__compra">
+                        <h3>Turner</h3>
+                        <h2>$70</h2>
+                    </div>
+                    <p class="texto__caracteristicas">La famosa receta que acompaña a la empresa hace mas
+                        de 20 años y actualmente continua siendo un exito en nuestra casa, el gran muffin turner,
+                        un clasico, de vainilla, suave y con chips de chocolate
+                    </p>
+                    <div class="recetas__informacion--boton">
+                        <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                    </div>
+                </div>
+                <div>
+                <!-- Carrousel de productos -->
+                    <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/turner-muffin.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/turner-muffin2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div  class="productos__opcion container-fluid">
+                <div class="opcion__texto col-lg-5 col-md-12">
+                    <div class="texto__compra">
+                        <h3>Tommy</h3>
+                        <h2>$75</h2>
+                    </div>
+                    <p class="texto__caracteristicas">Nuestro clasico y mas solicitado muffin de vainilla con arandanos,
+                        suave, fresco y natural.
+                    </p>
+                    <div class="recetas__informacion--boton">
+                    <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                    </div>
+                </div>
+                <div>
+                <!-- Carrousel de productos -->
+                    <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/tommy-muffin.jpg" class="d-block w-100" alt="Imagenes de nuestros productos de nutella">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tommy-muffin2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos de nutella">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="productos productos--torta" >
+            <!------------------------SETUP TORTA--------------------->     
+            <h2 class="productos__subtitulo" id="tortas">TORTAS</h2>
+            <div  class="productos__opcion container-fluid">
+                <div class="opcion__texto col-lg-5 col-md-12">
+                    <div class="texto__compra">
+                        <h3>Chorky</h3>
+                        <h2>$1650</h2>
+                    </div>
+                    <p class="texto__caracteristicas">La famosa receta que acompaña a la empresa hace mas
+                        de 20 años y actualmente continua siendo un exito en nuestra casa, el gran muffin turner,
+                        un clasico, de vainilla, suave y con chips de chocolate
+                    </p>
+                    <div class="recetas__informacion--boton">
+                        <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                    </div>
+                </div>
+                <div>
+                <!-- Carrousel de productos -->
+                    <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/melt-torta2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/Melt-torta.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>      
+    </section>
+    <footer>
+        <section class="footer__informacion">
+            <div class="informacion__columnas">
+                <h5>CONTACTANOS</h5>
+                <p><i class="fas fa-inbox"></i>nicolasplanas1998@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>4242-4242</p>
+                <p><i class="fab fa-instagram"></i>Instagram</p>
+                <p><i class="fab fa-facebook-square"></i>Facebook</p>
+            </div>
+            <div class="informacion__columnas">
+                <h5>LOCALES</h5>
+                <div class="columnas__locales"> 
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Lomas de Zamora</h6>
+                        <p>España 225</p>
+                        <p>4141-4141</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Banfield</h6>
+                        <p>Av. Vieytes 225</p>
+                        <p>4040-4040</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Adrogue</h6>
+                        <p>Av. Espeora 225</p>
+                        <p>3939-3939</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer__informacion--autor">
+            <p>@2021. NICOLAS PLANAS. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div> 
+    </footer>
+    <script src="js/bootstrap.min.js" ></script>
+</body>
+</html>

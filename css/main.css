@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+/** Mixins  setup**/
+/** Variables setup **/
+/** INDEX DESING **/
+#imgLogo {
+  height: 180px;
+  width: 180px;
+  margin-left: 30px;
+  margin-top: 1px;
+  transition: 1s; }
+
+#imgLogo:hover {
+  height: 184px;
+  width: 184px; }
+
+#imgBackground {
+  width: 100%;
+  min-height: 100%; }
+
+/** MENU NAVEGACION **/
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  font-family: 'Mate SC', serif;
+  font-weight: 800; }
+
+ul li:hover ul {
+  display: block;
+  position: absolute;
+  padding: 0; }
+
+.nav__submenu {
+  color: #472c2c;
+  text-align: center;
+  text-decoration: none; }
+
+@media (max-width: 1050px) {
+  header {
+    flex-direction: column;
+    position: relative;
+    background: #e1c8bdab;
+    background: linear-gradient(180deg, #e1c8bdab 0%, white 100%); }
+  .noIndex {
+    flex-direction: column;
+    position: relative; }
+  .nav__position {
+    width: 100%; }
+  .nav__position:hover {
+    background: #e1c8bd42;
+    background: linear-gradient(90deg, #e1c8bdab 0%, white 100%);
+    color: pink; }
+  .seccion__background {
+    display: block; }
+  #imgBackground {
+    display: block; } }
+
+#search {
+  border-radius: 9px;
+  margin: 6px;
+  background-color: rgba(105, 81, 81, 0.466);
+  width: 180px;
+  margin: 6px;
+  color: white;
+  padding: 2px; }
+
+#search::placeholder {
+  color: white; }
+
+.fa-search {
+  margin: 30px;
+  color: #472c2c; }
+
+.icon {
+  color: #472c2c;
+  border: 2px solid #472c2c;
+  padding: 4px;
+  background-color: white;
+  border-radius: 70px;
+  transition: 1s; }
+
+.icon:hover {
+  color: white;
+  background-color: #472c2c; }
+
+/** RECETAS DESING **/
+h1 {
+  text-align: center;
+  font-family: 'Prata', serif;
+  font-weight: 550; }
+
+.contenedor__principal {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.recetas__opciones {
+  height: 550px;
+  width: 330px;
+  background-color: #a2d2ff81;
+  border-radius: 12px;
+  margin: 10px;
+  transition: 1.3s;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16); }
+
+.recetas__informacion > h2 {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Prata', serif;
+  text-align: center; }
+
+.imgRecetas {
+  height: 350px;
+  width: 330px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px; }
+
+.recetas__informacion {
+  margin-left: 5px; }
+
+.informacion__boton {
+  border: none;
+  height: 40px;
+  width: 100px;
+  background: #94bbe9;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 13px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16); }
+
+.informacion__boton:hover {
+  background: #65a1e6;
+  height: 43px;
+  width: 105px; }
+
+.recetas__informacion--boton {
+  display: flex;
+  justify-content: center; }
+
+/** FOOTER DESING **/
+.footer__informacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgba(223, 213, 203, 0.404);
+  position: relative;
+  box-shadow: 12px 0 16px 0 rgba(0, 0, 0, 0.24); }
+
+p > i {
+  margin: 4px; }
+
+h6 > i {
+  margin: 4px; }
+
+.informacion__columnas {
+  margin: 9px; }
+
+.columnas__locales {
+  display: flex;
+  flex-direction: row;
+  margin: auto; }
+
+.columnas__locales > div {
+  margin: 10px; }
+
+/** Derechos de autor **/
+.footer__informacion--autor > p {
+  height: 3px;
+  background-color: white;
+  text-align: center;
+  font-size: small; }
+
+/** ----------------CONTACTO----------------- **/
+.noIndex {
+  position: relative;
+  background: #e1c8bdab;
+  background: linear-gradient(180deg, #e1c8bdab 0%, white 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.section__contacto {
+  position: absolute;
+  margin-top: 7vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  z-index: 1;
+  background-color: #faf5ee; }
+
+@media (max-width: 1050px) {
+  .section__contacto {
+    position: relative;
+    margin-bottom: 30px; } }
+
+legend {
+  margin-top: 10px; }
+
+#titulo__contacto {
+  color: white; }
+
+.formulario__cliente {
+  height: 55vh;
+  width: 60vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #57311de0;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16); }
+
+@media (max-width: 1050px) {
+  formulario__cliente {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px; } }
+
+.cliente__inputs {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin: 3px;
+  color: white; }
+
+.inputs__contacto {
+  padding: 4px;
+  margin: 2px;
+  border-radius: 8px; }
+
+.inputs__contacto--mensaje {
+  resize: none;
+  height: 100%;
+  margin: 6px; }
+
+.clientes__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-rows: 80px 80px 150px; }
+
+@media (max-width: 1050px) {
+  .clientes__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px; } }
+
+.cliente__inputs--email {
+  grid-column: span 2; }
+
+.cliente__inputs--mensaje {
+  grid-column: span 2; }
+
+.cliente__boton {
+  display: flex;
+  align-items: center; }
+
+.boton__config--cliente {
+  background: #8a583d;
+  background: linear-gradient(4deg, #8a583d 0%, rgba(138, 88, 61, 0.628186) 100%);
+  height: 90px;
+  width: 130px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #88888854;
+  font-weight: bold;
+  font-size: larger;
+  transition: 1s;
+  color: white; }
+
+@media (max-width: 1050px) {
+  .boton__config--cliente {
+    height: 100%;
+    padding: 10px; } }
+
+.boton__config--cliente:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16); }
+
+#baseChocolate {
+  width: 100%;
+  position: relative;
+  z-index: -1; }
+
+@media (max-width: 1050px) {
+  #baseChocolate {
+    display: none; } }
+
+/** ----------------PRODUCTOS----------------- **/
+/** ---Catalogo de productos---- **/
+#tituloCatalogo {
+  text-align: center;
+  margin: 10px; }
+
+#subtituloCatalogo {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Prata', serif;
+  margin-top: 50px; }
+
+.seccion3 {
+  height: 40vh;
+  align-items: flex-start;
+  margin-top: 16vh;
+  margin-bottom: 30px; }
+
+@media (max-width: 600px) {
+  .seccion3 {
+    height: 100%; } }
+
+.titulos__productos {
+  text-align: center;
+  color: #582222; }
+
+.imgProductos {
+  height: 190px;
+  width: 200px;
+  transition: 1s; }
+
+.imgProductos:hover {
+  height: 200px;
+  width: 210px; }
+
+.links__productos {
+  text-decoration: none; }
+
+/** ----------PRODUCTOS >>> SUGERENCIAS------------ **/
+.contenedorFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%; }
+
+.fondoTituloSugerencias {
+  text-align: center;
+  height: 11vh;
+  width: 45vw; }
+
+.subtituloSugerencias {
+  display: none;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Prata', serif;
+  margin-top: 50px;
+  background-color: pink;
+  font-size: 2.5rem; }
+
+@media (max-width: 1050px) {
+  .fondoTituloSugerencias {
+    display: none; }
+  .subtituloSugerencias {
+    display: block; } }
+
+.contenedor__sugerencias {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100vw; }
+
+.sugerencias__items {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 500px; }
+
+@media (max-width: 1050px) {
+  .sugerencias__items {
+    width: 100%; } }
+
+/** ----------PRODUCTOS >>> OPCIONES------------ **/
+.contenedor__productos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%; }
+
+.productos {
+  display: block; }
+
+.productos--torta {
+  margin-bottom: 20px; }
+
+.productos__subtitulo {
+  margin-left: 35px;
+  background-color: #552b2b;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px; }
+
+@media (max-width: 1000px) {
+  .productos__subtitulo {
+    margin-left: 0px;
+    width: 100%; } }
+
+.productos__opcion {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.texto__compra {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px; }
+
+.carousel-item img {
+  height: 350px;
+  width: 400px; }
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 350px;
+    width: 100%; } }
+
+.carousel-productos {
+  width: 500px;
+  justify-content: center;
+  margin-top: 50px; }
+
+@media (max-width: 1000px) {
+  .carousel-productos {
+    width: 100%; } }
+
+.carousel-item img {
+  border-radius: 15px;
+  position: relative; }
+
+.texto__caracteristicas {
+  width: 40vw;
+  font-weight: 600;
+  font-size: large; }
+
+.informacion__boton--compras {
+  height: 55px;
+  width: 135px;
+  text-align: center;
+  transition: 1s; }
+
+.informacion__boton--compras:hover {
+  width: 150px; }
+
+@media (max-width: 1000px) {
+  .carousel-item {
+    width: 500px; } }
+
+@media (max-width: 376px) {
+  .carousel-item {
+    width: auto; } }
+
+/** ----------------LOCALES----------------- **/
+.section__locales {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; }
+
+.carousel {
+  width: 750px;
+  justify-content: center;
+  margin-top: 50px; }
+
+.locales__contacto {
+  margin: 30px;
+  align-items: center; }
+
+.contacto__opciones {
+  margin-right: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.103); }
+
+.contacto__opciones div {
+  width: 300px; }
+
+.contacto__opciones h5 {
+  text-align: center; }
+
+.opciones__items {
+  margin-left: 10px; }
+
+/** ----------------USER LOGIN----------------- **/
+.seccion__user {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 1050px) {
+  .seccion__user {
+    position: relative; } }
+
+.user__inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 12px; }
+  .user__inputs label {
+    font-weight: 500; }
+
+.inputs__completar {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.999s; }
+
+.inputs__completar:hover {
+  color: white;
+  background-color: #472c2c; }
+
+#ingresar {
+  margin: 8px;
+  width: 95%;
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #472c2c;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.16); }

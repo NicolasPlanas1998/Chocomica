@@ -1,0 +1,111 @@
+.noIndex{
+position: relative;
+background: $backgroundColor;
+background: $popularGradient;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.section__contacto{
+position: absolute;
+margin-top: 7vh;
+margin-left: 20%;
+margin-right: 20%; 
+z-index: 1;
+background-color: #faf5ee;
+}
+@media (max-width: 1050px){
+    .section__contacto{
+    position: relative;
+    margin-bottom: 30px; 
+    }
+}
+legend{
+margin-top: 10px;
+}
+#titulo__contacto{
+    color: white;
+}
+.formulario__cliente{
+@include size(60vw, 55vh); 
+border: 1px solid black;
+border-radius: 10px;
+background-color: #57311de0;
+box-shadow: $popularShadow;
+}
+@media (max-width: 1050px){
+    formulario__cliente{
+    @include size(100%, 100%);
+    margin-bottom: 20px;
+    }
+    }
+.cliente__inputs{
+display: flex;
+flex-direction: column;
+font-weight: 600;
+margin: 3px; 
+color: white;  
+}
+.inputs__contacto{
+padding: 4px;
+margin: 2px;
+border-radius: 8px;
+}
+.inputs__contacto--mensaje{
+resize: none;
+height: 100%;
+margin: 6px;
+}
+.clientes__grid{
+display:grid;
+grid-template-columns: 1fr 1fr 0.5fr;
+grid-template-rows: 80px 80px 150px;
+}
+@media (max-width: 1050px){
+    .clientes__grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    }
+}
+.cliente__inputs--email{
+grid-column: span 2;
+}
+.cliente__inputs--mensaje{
+grid-column: span 2;
+}
+.cliente__boton{
+display: flex;
+align-items: center;
+}
+.boton__config--cliente{
+background: rgb(138,88,61);
+background: linear-gradient(4deg, rgba(138,88,61,1) 0%, rgba(138,88,61,0.6281863087031687) 100%);
+@include size(130px, 90px);
+border-radius: 10px;
+box-shadow: 5px 10px 8px #88888854;
+font-weight:bold;
+font-size: larger;
+transition: 1s;
+color: white;
+}
+@media (max-width: 1050px){
+    .boton__config--cliente{
+        height: 100%;
+        padding: 10px;
+    }
+}
+.boton__config--cliente:hover{
+box-shadow: $popularShadow;
+}
+#baseChocolate{
+width: 100%;
+position: relative;
+z-index: -1;
+}
+@media (max-width: 1050px){
+    #baseChocolate{
+    display: none;
+    }
+}

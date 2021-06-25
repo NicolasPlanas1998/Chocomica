@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta keywords="Contacto, telefono, whatsapp, pasteleria, tortas, donas, muffins, muffin, dulce, fiesta, cumpleaños">
+        <meta description= "Iniciar sesion en Chocomica">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Prata&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/31bc8b6bf0.js" crossorigin="anonymous"></script>
+        <title>Chocomica | Login</title>
+    </head>
+<body>
+    <header class="noIndex">
+        <a href="index.html">
+            <img id="imgLogo" src="images/logo.png" alt="marca Chocomica tienda de tortas">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light nav__position">
+            <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" aria-expanded="false">
+                            PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li><a class="nav__submenu " href="productos.html">Tortas</a></li>
+                                <li><a class="nav__submenu" href="productos.html">Muffins</a></li>
+                                <li><a class="nav__submenu" href="productos.html">Donas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">LOCALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <i class="fas fa-search">
+                <input type="search" id="search" placeholder="Buscar...">
+            </i>
+            <a href="user.html"><i class="fas fa-user icon"></i></a>
+        </div>
+    </header>
+    <section class="seccion__user">
+        <form>
+            <fieldset>
+                <legend><h1>INGRESAR</h1></legend>
+                <div>
+                    <div  class="user__inputs">
+                        <label for="mail"> USUARIO</label>
+                        <i class="fas fa-user icon">
+                            <input type="mail" name="mail" class="inputs__completar" placeholder="Introducir usuario">
+                        </i>
+                    </div>
+                    <div class="user__inputs">
+                        <label for="contraseña">CONTRASEÑA</label>
+                        <i class="fas fa-lock icon">
+                            <input type="password" name="contraseña"  class="inputs__completar" placeholder="Introducir contraseña">
+                        </i>
+                    </div>
+                    <button id="ingresar" >INGRESAR</button>
+                    <p>No tienes una cuenta? <a href="">Crear una cuenta</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <div>
+        <img alt="imagen de chocolate derretido" id="baseChocolate"src="images/chocolate.png">
+    </div>
+    <footer>
+        <section class="footer__informacion">
+            <div class="informacion__columnas">
+                <h5>CONTACTANOS</h5>
+                <p><i class="fas fa-inbox"></i>nicolasplanas1998@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>4242-4242</p>
+                <p><i class="fab fa-instagram"></i>Instagram</p>
+                <p><i class="fab fa-facebook-square"></i>Facebook</p>
+            </div>
+            <div class="informacion__columnas">
+                <h5>LOCALES</h5>
+                <div class="columnas__locales"> 
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Lomas de Zamora</h6>
+                        <p>España 225</p>
+                        <p>4141-4141</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Banfield</h6>
+                        <p>Av. Vieytes 225</p>
+                        <p>4040-4040</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-map-marker-alt"></i>Adrogue</h6>
+                        <p>Av. Espeora 225</p>
+                        <p>3939-3939</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer__informacion--autor">
+            <p>@2021. NICOLAS PLANAS. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div> 
+    </footer>
+    <script src="js/bootstrap.min.js" ></script>
+</body>
+</html>
