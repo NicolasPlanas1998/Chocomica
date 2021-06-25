@@ -1,4 +1,4 @@
-# chocomica
+# CHOCOMICA
 - Trabajo Final Coderhouse -
 
 Objetivos: Sitio web dinamico, responsive y buena visual.
