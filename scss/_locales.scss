@@ -30,5 +30,20 @@ border: 1px solid rgba(0, 0, 0, 0.103);
 .opciones__items{
     margin-left: 10px;
 }
-
+@media (max-width: 376px){
+    .carousel-locales{
+        display: none;
+    }
+    }
+    .mapa{
+        width: 100%;
+        border: 1px solid black;
+        margin: 20px;
+        iframe{
+            @include size(100%, 500px)
+    }
+    .contacto__opciones{
+        margin-right: 0;
+    }
+}
 

@@ -15,9 +15,11 @@
     </head>
 <body>
     <header class="noIndex">
+        <!--logo de la marca-->
         <a href="index.html">
             <img id="imgLogo" src="images/logo.png" alt="marca Chocomica tienda de tortas">
         </a>
+        <!--Menu de navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light nav__position">
             <div class="container-fluid ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +31,7 @@
                             <a class="nav-link" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" aria-expanded="false">
-                            PRODUCTOS
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" aria-expanded="false"> PRODUCTOS </a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                                 <li><a class="nav__submenu " href="productos.html">Tortas</a></li>
                                 <li><a class="nav__submenu" href="productos.html">Muffins</a></li>
@@ -48,9 +48,10 @@
                 </div>
             </div>
         </nav>
+        <!--Registracion de usuarios habituales-->
         <div>
             <i class="fas fa-search">
-                <input type="search" id="search" placeholder="Buscar...">
+                <input type="search" id="search" placeholder="Buscar">
             </i>
             <a href="user.html"><i class="fas fa-user icon"></i></a>
         </div>
@@ -59,7 +60,7 @@
     <section class="seccion__catalogo">
         <h1 id="tituloCatalogo">- PRODUCTOS -</h1>
         <h4 id="subtituloCatalogo">¡Ofrecemos catering para eventos!</h4>
-        <div class="contenedor__principal seccion3">
+        <div class="contenedor__principal contenedor__principal--productos">
             <div class="seccion_productos ">
                 <a class="links__productos" href="#donas">
                     <img class="imgProductos" src="images/opcionProductosDonas.png" alt="emoji de donas">
@@ -138,10 +139,10 @@
                 <!-- Carrousel de productos -->
                     <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active carousel-item-productos">
                                 <img src="images/creamy-dona.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item carousel-item-productos">
                                 <img src="images/creamy-dona2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
                         </div>
@@ -165,10 +166,10 @@
                 <!-- Carrousel de productos -->
                     <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active carousel-item-productos">
                                 <img src="images/nutella-dona.jpg" class="d-block w-100 " alt="Imagenes de nuestros productos de nutella">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item carousel-item-productos">
                                 <img src="images/nutella-dona2.jpg" class="d-block w-100 " alt="Imagenes de nuestros productos de nutella">
                             </div>
                         </div>
@@ -197,10 +198,10 @@
                 <!-- Carrousel de productos -->
                     <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active carousel-item-productos">
                                 <img src="images/turner-muffin.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item carousel-item-productos">
                                 <img src="images/turner-muffin2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
                         </div>
@@ -217,17 +218,17 @@
                         suave, fresco y natural.
                     </p>
                     <div class="recetas__informacion--boton">
-                    <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
+                        <button class="informacion__boton informacion__boton--compras"> <i class="fas fa-shopping-cart"></i>  Agregar al Carrito </button>
                     </div>
                 </div>
                 <div>
                 <!-- Carrousel de productos -->
                     <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active carousel-item-productos">
                                 <img src="images/tommy-muffin.jpg" class="d-block w-100" alt="Imagenes de nuestros productos de nutella">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item carousel-item-productos">
                                 <img src="images/tommy-muffin2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos de nutella">
                             </div>
                         </div>
@@ -256,10 +257,10 @@
                 <!-- Carrousel de productos -->
                     <div id="carouselExampleIndicators" class="carousel-productos slide col-md-12" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item active carousel-item-productos">
                                 <img src="images/melt-torta2.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item carousel-item-productos">
                                 <img src="images/Melt-torta.jpg" class="d-block w-100" alt="Imagenes de nuestros productos">
                             </div>
                         </div>
@@ -268,6 +269,7 @@
             </div>
         </div>      
     </section>
+    <!--Informacion resumida de contacto-->
     <footer>
         <section class="footer__informacion">
             <div class="informacion__columnas">
