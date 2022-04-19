@@ -4,18 +4,19 @@ margin: 0;
 list-style: none;
 text-decoration: none;
 }
-/** Mixins  setup**/
+// Mixins  setup**
 @mixin size($width, $height) {
 height: $height;
 width: $width;    
 }
-/** Variables setup **/
+// Variables setup 
 $popularGradient: linear-gradient(180deg, #e1c8bdab 0%, rgba(255,255,255,1) 100%);
 $backgroundColor:#e1c8bdab ;
 $brown:rgb(71, 44, 44);
 $grey: #81817f35;
 $popularShadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
-/** INDEX DESING **/
+
+/*** INDEX DESING ***/
 #imgLogo{
 @include size(180px, 180px);
 margin-left: 30px;
@@ -29,7 +30,7 @@ transition: 1s;
 width: 100%;
 min-height: 100%;
 }
-/** NAV MENU **/
+/* NAV MENU */
 header{
     position: absolute;
     display: flex;
@@ -38,17 +39,15 @@ header{
     justify-content:space-evenly ;
     font-family: 'Mate SC', serif;
 }
-.fa-bars{
-    font-size: 30px;
-    color: rgb(79, 79, 79);
-    display:block;
-    cursor: pointer;
-    margin: 0px 0px 5px 20px;
+.container-hamb{
     display: none;
 }
-.fa-bars:hover{
-    transition: 0.5s;
-    font-size: 34px;
+.fa-bars{
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(79, 79, 79);
+    cursor: pointer;
+    margin: 0px 0px 0px 20px;
 }
 .first-menu{
     display: flex;
@@ -64,14 +63,12 @@ header{
 }
 .dropdown-li:hover{
     background-color: $grey;
-    border-radius: 10px 10px 0px 0px !important ;
     width: auto;
 }
 .container-submenu{
     display:none;
     position:absolute;
     padding: 0;
-    border-radius: 0 0 10px 10px;
     width: 132px;  
     text-align: center;
     li a{
@@ -85,7 +82,6 @@ ul li:hover > ul{
     display: block;
 }
 
-
 @media (max-width:1050px){
     header{
         flex-direction: column;
@@ -93,20 +89,22 @@ ul li:hover > ul{
         background: $backgroundColor;
         background: $popularGradient; 
         nav{
-            width: 100vw;
+            width: 100%;
             transition: 4s;
         }
     }
-    .fa-bars{
+    .container-hamb{
         display: block;
     }
-    .container-searcher{
-        display: none;
+    .rotate{
+        transition: 0.1s;
+        font-size: 34px;
+        transform:rotate(90deg);
     }
     .container-submenu{
         position: relative;
         text-align: center;
-        width: 100vw;
+        width: 100%;
     }
     .first-menu{
         display: none;
@@ -115,46 +113,29 @@ ul li:hover > ul{
     .expand{
         display: block;
         text-align: center;
-
-        
     }
-    .seccion__background{
-    display: block;
+    .container-user{
+        display: none;
     }
-    #imgBackground{
-    display: block;
-    }
-}
-#search{
-border-radius: 9px;
-margin:6px;
-background-color: rgba(105, 81, 81, 0.466);
-width: 180px;
-margin: 6px;
-color: white;
-padding: 2px;
-}
-#search::placeholder{
-color: white;
-}
-.fa-search{
-margin: 30px;
-color: $brown;
 }
 .icon{
 color: $brown;
-border: 2px solid $brown;
-padding: 4px;
-background-color: white;
-border-radius: 70px;
-transition: 1s;
+padding: 6px;
+border: 0.5px solid $brown;
+background-color: $grey;
+border-radius: 100%;
+cursor: pointer;
 }
 .icon:hover{
 color: white;
 background-color:$brown;
 }
 /** RECETAS DESING **/
+.section-recetas{
+    height: 100vh;
+}
 h1{
+margin-top: 30px;
 text-align: center;
 font-family: 'Prata', serif;
 font-weight: 550;
@@ -189,6 +170,9 @@ border-top-right-radius: 13px;
 }
 .recetas__informacion{
 margin-left: 5px;
+    h2{
+        margin-top: 10px;
+    }
 }
 .informacion__boton{
 border: none;
@@ -208,27 +192,39 @@ background: rgb(101, 161, 230);
 display: flex;
 justify-content: center;
 }
+@media (max-width:1050px){
+    .section-recetas{
+        height: auto;
+    }
+}
 /** FOOTER DESING **/
 .footer__informacion{
+margin-top: 40px;
 display: flex;
+position: absolute;
+bottom: 0;
 flex-wrap: wrap;
 flex-direction: row;
+justify-content:space-around ;
 background-color: rgba(223, 213, 203, 0.404);
 position: relative;
 box-shadow: 12px 0 16px 0 rgba(0,0,0,0.24);
 }
 p {
     > i{
-        margin: 4px;
+        margin: 2px;
     }
 }
 h6 {
     > i{
-        margin: 4px;
+        margin: 1px;
     }
 }
 .informacion__columnas{
-margin: 9px;
+margin: 1px;
+    h5{
+        text-align: center;
+    }
 }
 .columnas__locales{
 display: flex;

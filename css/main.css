@@ -4,9 +4,7 @@
   list-style: none;
   text-decoration: none; }
 
-/** Mixins  setup**/
-/** Variables setup **/
-/** INDEX DESING **/
+/*** INDEX DESING ***/
 #imgLogo {
   height: 180px;
   width: 180px;
@@ -22,7 +20,7 @@
   width: 100%;
   min-height: 100%; }
 
-/** NAV MENU **/
+/* NAV MENU */
 header {
   position: absolute;
   display: flex;
@@ -31,17 +29,15 @@ header {
   justify-content: space-evenly;
   font-family: 'Mate SC', serif; }
 
-.fa-bars {
-  font-size: 30px;
-  color: #4f4f4f;
-  display: block;
-  cursor: pointer;
-  margin: 0px 0px 5px 20px;
+.container-hamb {
   display: none; }
 
-.fa-bars:hover {
-  transition: 0.5s;
-  font-size: 34px; }
+.fa-bars {
+  display: inline-block;
+  font-size: 30px;
+  color: #4f4f4f;
+  cursor: pointer;
+  margin: 0px 0px 0px 20px; }
 
 .first-menu {
   display: flex;
@@ -56,14 +52,12 @@ li:hover {
 
 .dropdown-li:hover {
   background-color: #81817f35;
-  border-radius: 10px 10px 0px 0px !important;
   width: auto; }
 
 .container-submenu {
   display: none;
   position: absolute;
   padding: 0;
-  border-radius: 0 0 10px 10px;
   width: 132px;
   text-align: center; }
   .container-submenu li a {
@@ -82,57 +76,45 @@ ul li:hover > ul {
     background: #e1c8bdab;
     background: linear-gradient(180deg, #e1c8bdab 0%, white 100%); }
     header nav {
-      width: 100vw;
+      width: 100%;
       transition: 4s; }
-  .fa-bars {
+  .container-hamb {
     display: block; }
-  .container-searcher {
-    display: none; }
+  .rotate {
+    transition: 0.1s;
+    font-size: 34px;
+    transform: rotate(90deg); }
   .container-submenu {
     position: relative;
     text-align: center;
-    width: 100vw; }
+    width: 100%; }
   .first-menu {
     display: none;
     padding: 0; }
   .expand {
     display: block;
     text-align: center; }
-  .seccion__background {
-    display: block; }
-  #imgBackground {
-    display: block; } }
-
-#search {
-  border-radius: 9px;
-  margin: 6px;
-  background-color: rgba(105, 81, 81, 0.466);
-  width: 180px;
-  margin: 6px;
-  color: white;
-  padding: 2px; }
-
-#search::placeholder {
-  color: white; }
-
-.fa-search {
-  margin: 30px;
-  color: #472c2c; }
+  .container-user {
+    display: none; } }
 
 .icon {
   color: #472c2c;
-  border: 2px solid #472c2c;
-  padding: 4px;
-  background-color: white;
-  border-radius: 70px;
-  transition: 1s; }
+  padding: 6px;
+  border: 0.5px solid #472c2c;
+  background-color: #81817f35;
+  border-radius: 100%;
+  cursor: pointer; }
 
 .icon:hover {
   color: white;
   background-color: #472c2c; }
 
 /** RECETAS DESING **/
+.section-recetas {
+  height: 100vh; }
+
 h1 {
+  margin-top: 30px;
   text-align: center;
   font-family: 'Prata', serif;
   font-weight: 550; }
@@ -167,6 +149,8 @@ h1 {
 
 .recetas__informacion {
   margin-left: 5px; }
+  .recetas__informacion h2 {
+    margin-top: 10px; }
 
 .informacion__boton {
   border: none;
@@ -188,23 +172,33 @@ h1 {
   display: flex;
   justify-content: center; }
 
+@media (max-width: 1050px) {
+  .section-recetas {
+    height: auto; } }
+
 /** FOOTER DESING **/
 .footer__informacion {
+  margin-top: 40px;
   display: flex;
+  position: absolute;
+  bottom: 0;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
   background-color: rgba(223, 213, 203, 0.404);
   position: relative;
   box-shadow: 12px 0 16px 0 rgba(0, 0, 0, 0.24); }
 
 p > i {
-  margin: 4px; }
+  margin: 2px; }
 
 h6 > i {
-  margin: 4px; }
+  margin: 1px; }
 
 .informacion__columnas {
-  margin: 9px; }
+  margin: 1px; }
+  .informacion__columnas h5 {
+    text-align: center; }
 
 .columnas__locales {
   display: flex;
@@ -429,7 +423,8 @@ legend {
 .productos__subtitulo {
   margin-left: 35px;
   background-color: #552b2b;
-  border-radius: 10px;
+  border-radius: 20px 0 0 20px;
+  padding: 4px;
   color: white;
   margin-top: 10px; }
 
@@ -452,8 +447,8 @@ legend {
 
 .opcion__texto {
   background-color: #e1c8bd6e;
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 30px 0 30px 0;
+  padding: 15px;
   margin: 10px; }
 
 .carousel-item-productos img {
@@ -479,7 +474,7 @@ legend {
   position: relative; }
 
 .texto__caracteristicas {
-  width: 40vw;
+  padding: 1px;
   font-weight: 600;
   font-size: large; }
 
@@ -493,10 +488,6 @@ legend {
   width: 150px; }
 
 @media (max-width: 1000px) {
-  .carousel-item-productos {
-    width: 500px; } }
-
-@media (max-width: 376px) {
   .carousel-item-productos {
     width: auto; } }
 

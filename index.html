@@ -15,17 +15,17 @@
 </head>
 <body>
     <header>
-        <!--logo de la marca-->
         <a href="index.html">
             <img id="imgLogo" src="images/logo.png" alt="marca Chocomica tienda de tortas">
         </a>
-        <!--Menu de navegacion-->
         <nav>      
-            <i class="fas fa-bars"></i>
+            <div class="container-hamb">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="first-menu">
                 <li><a class="nav-link"  href="index.html">INICIO</a></li>
                 <li class="dropdown-li">
-                    <a class="nav-link"  href="index.html">PRODUCTOS</a>
+                    <a class="nav-link"  href="productos.html">PRODUCTOS</a>
                     <ul class="container-submenu">
                         <li><a class="nav__submenu" href="productos.html">Tortas</a></li>
                         <li><a class="nav__submenu" href="productos.html">Muffins</a></li>
@@ -36,19 +36,14 @@
                 <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTOS</a></li>
             </ul>
         </nav>
-        <div class="container-searcher">
-            <i class="fas fa-search">
-                <input type="search" id="search" placeholder="Buscar">
-            </i>
+        <div class="container-user">
             <a href="user.html"><i class="fas fa-user icon"></i></a>
         </div>
     </header>
-    <!--Imagen pantalla inicial-->
     <section class="seccion__background">
-        <img id="imgBackground" src="images/inicio2.jpg"  alt="torta de dulce de leche ">
+        <img id="imgBackground" src="images/index.jpg"  alt="torta de dulce de leche ">
     </section>
-    <!--Segunda Pantalla recetas-->
-    <section>
+    <section class="section-recetas">
         <h1>RECETAS</h1>
         <div class="contenedor__principal ">
             <div class="recetas__opciones" >
@@ -92,7 +87,6 @@
             </div>
         </div>
     </section>
-    <!--Footer con informacion resumida de contacto-->
     <footer>
         <section class="footer__informacion">
             <div class="informacion__columnas">
@@ -123,7 +117,6 @@
                 </div>
             </div>
         </section>
-        <!--Derechos de autor-->
         <div class="footer__informacion--autor">
             <p>@2021. NICOLAS PLANAS. TODOS LOS DERECHOS RESERVADOS.</p>
         </div> 

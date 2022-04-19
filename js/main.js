@@ -6,5 +6,5 @@ hambur.addEventListener('click',dropdown)
 function dropdown (e) {
     e.preventDefault(e)
     menu.classList.toggle('expand')
-
+    hambur.classList.toggle('rotate')
 }
