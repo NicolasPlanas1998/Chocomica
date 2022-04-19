@@ -10,6 +10,8 @@
         <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Prata&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/31bc8b6bf0.js" crossorigin="anonymous"></script>
+        <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
         <title>Chocomica | Contacto</title>
     </head>
 <body>
@@ -39,7 +41,6 @@
             <a href="user.html"><i class="fas fa-user icon"></i></a>
         </div>
     </header>
-    <!--Formulario para contactarse con la empresa-->
     <section class="section__contacto">
         <form >
             <fieldset class="formulario__cliente">
@@ -59,10 +60,12 @@
                     </div>
                     <div class="cliente__inputs cliente__inputs--mensaje">
                         <label for="mensaje">MENSAJE </label>
-                        <textarea  class="inputs__contacto inputs__contacto--mensaje" placeholder="Introducir mensaje"></textarea>
+                        <textarea  name="mensaje" class="inputs__contacto inputs__contacto--mensaje" placeholder="Introducir mensaje"></textarea>
                     </div>
                     <div class="cliente__boton">
-                        <button class="boton__config--cliente"> <i class="fas fa-envelope"></i>  ENVIAR </button>
+                        <button class="boton__config--cliente"> 
+                            <i class="fas fa-envelope"></i>  ENVIAR 
+                        </button>
                     </div>
                 </div>
             </fieldset>
@@ -71,9 +74,8 @@
     <div>
         <img alt="imagen de chocolate derretido" id="baseChocolate"src="images/chocolate.png">
     </div>
-    <!--Informacion resumida de contacto-->
     <footer>
-        <section class="footer__informacion">
+        <section class="footer__informacion footer__informacion--contacto">
             <div class="informacion__columnas">
                 <h5>CONTACTANOS</h5>
                 <p><i class="fas fa-inbox"></i>nicolasplanas1998@gmail.com</p>
@@ -106,6 +108,7 @@
             <p>@2021. NICOLAS PLANAS. TODOS LOS DERECHOS RESERVADOS.</p>
         </div> 
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="js/bootstrap.min.js" ></script>
     <script src="./js/main.js"></script>
 </body>

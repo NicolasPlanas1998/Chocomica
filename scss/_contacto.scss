@@ -27,7 +27,7 @@ margin-top: 10px;
     color: white;
 }
 .formulario__cliente{
-@include size(60vw, 55vh); 
+@include size(60vw, 60vh); 
 border: 1px solid black;
 border-radius: 10px;
 background-color: #57311de0;
@@ -43,7 +43,8 @@ box-shadow: $popularShadow;
 display: flex;
 flex-direction: column;
 font-weight: 600;
-margin: 3px; 
+margin: 3px;
+margin-left: 10px; 
 color: white;  
 }
 .inputs__contacto{
@@ -103,6 +104,9 @@ box-shadow: $popularShadow;
 width: 100%;
 position: relative;
 z-index: -1;
+}
+.footer__informacion--contacto{
+    margin-top: 0;
 }
 @media (max-width: 1050px){
     #baseChocolate{
