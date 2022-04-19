@@ -1,6 +1,8 @@
 *{
 padding: 0;
 margin: 0;
+list-style: none;
+text-decoration: none;
 }
 /** Mixins  setup**/
 @mixin size($width, $height) {
@@ -11,6 +13,7 @@ width: $width;
 $popularGradient: linear-gradient(180deg, #e1c8bdab 0%, rgba(255,255,255,1) 100%);
 $backgroundColor:#e1c8bdab ;
 $brown:rgb(71, 44, 44);
+$grey: #81817f35;
 $popularShadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 /** INDEX DESING **/
 #imgLogo{
@@ -26,44 +29,94 @@ transition: 1s;
 width: 100%;
 min-height: 100%;
 }
-/** MENU NAVEGACION **/
+/** NAV MENU **/
 header{
-position: absolute;
-display: flex;
-align-items: center;
-width: 100%;
-justify-content:space-evenly ;
-font-family: 'Mate SC', serif;
-font-weight: 800;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:space-evenly ;
+    font-family: 'Mate SC', serif;
 }
-ul li:hover ul{
-display: block;
-position: absolute;
-padding: 0;   
-} 
-.nav__submenu{
-color:$brown;
-text-align: center;
-text-decoration: none;
+.fa-bars{
+    font-size: 30px;
+    color: rgb(79, 79, 79);
+    display:block;
+    cursor: pointer;
+    margin: 0px 0px 5px 20px;
+    display: none;
 }
+.fa-bars:hover{
+    transition: 0.5s;
+    font-size: 34px;
+}
+.first-menu{
+    display: flex;
+    text-decoration: none;
+    li a{
+        color: grey;
+    }   
+}
+.first-menu
+    li:hover{
+        background-color: $grey;
+        border-radius: 10px;
+}
+.dropdown-li:hover{
+    background-color: $grey;
+    border-radius: 10px 10px 0px 0px !important ;
+    width: auto;
+}
+.container-submenu{
+    display:none;
+    position:absolute;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+    width: 132px;  
+    text-align: center;
+    li a{
+        text-decoration: none;
+        color: grey;
+        width: 100%;
+        margin: 0;
+    }
+}
+ul li:hover > ul{
+    display: block;
+}
+
+
 @media (max-width:1050px){
     header{
-    flex-direction: column;
-    position: relative;
-    background: $backgroundColor;
-    background: $popularGradient; 
+        flex-direction: column;
+        position: relative;
+        background: $backgroundColor;
+        background: $popularGradient; 
+        nav{
+            width: 100vw;
+            transition: 4s;
+        }
     }
-    .noIndex{
-    flex-direction: column;
-    position: relative;
+    .fa-bars{
+        display: block;
     }
-    .nav__position{
-    width: 100%;
+    .container-searcher{
+        display: none;
     }
-    .nav__position:hover{
-    background: #e1c8bd42;
-    background: linear-gradient(90deg, $backgroundColor 0%, rgba(255,255,255,1) 100%); 
-    color: pink;
+    .container-submenu{
+        position: relative;
+        text-align: center;
+        width: 100vw;
+    }
+    .first-menu{
+        display: none;
+        padding: 0;
+    }
+    .expand{
+        display: block;
+        text-align: center;
+
+        
     }
     .seccion__background{
     display: block;

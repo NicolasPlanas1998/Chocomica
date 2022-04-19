@@ -1,6 +1,8 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
 
 /** Mixins  setup**/
 /** Variables setup **/
@@ -20,25 +22,58 @@
   width: 100%;
   min-height: 100%; }
 
-/** MENU NAVEGACION **/
+/** NAV MENU **/
 header {
   position: absolute;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
-  font-family: 'Mate SC', serif;
-  font-weight: 800; }
+  font-family: 'Mate SC', serif; }
 
-ul li:hover ul {
+.fa-bars {
+  font-size: 30px;
+  color: #4f4f4f;
   display: block;
-  position: absolute;
-  padding: 0; }
+  cursor: pointer;
+  margin: 0px 0px 5px 20px;
+  display: none; }
 
-.nav__submenu {
-  color: #472c2c;
-  text-align: center;
+.fa-bars:hover {
+  transition: 0.5s;
+  font-size: 34px; }
+
+.first-menu {
+  display: flex;
   text-decoration: none; }
+  .first-menu li a {
+    color: grey; }
+
+.first-menu
+li:hover {
+  background-color: #81817f35;
+  border-radius: 10px; }
+
+.dropdown-li:hover {
+  background-color: #81817f35;
+  border-radius: 10px 10px 0px 0px !important;
+  width: auto; }
+
+.container-submenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  width: 132px;
+  text-align: center; }
+  .container-submenu li a {
+    text-decoration: none;
+    color: grey;
+    width: 100%;
+    margin: 0; }
+
+ul li:hover > ul {
+  display: block; }
 
 @media (max-width: 1050px) {
   header {
@@ -46,15 +81,23 @@ ul li:hover ul {
     position: relative;
     background: #e1c8bdab;
     background: linear-gradient(180deg, #e1c8bdab 0%, white 100%); }
-  .noIndex {
-    flex-direction: column;
-    position: relative; }
-  .nav__position {
-    width: 100%; }
-  .nav__position:hover {
-    background: #e1c8bd42;
-    background: linear-gradient(90deg, #e1c8bdab 0%, white 100%);
-    color: pink; }
+    header nav {
+      width: 100vw;
+      transition: 4s; }
+  .fa-bars {
+    display: block; }
+  .container-searcher {
+    display: none; }
+  .container-submenu {
+    position: relative;
+    text-align: center;
+    width: 100vw; }
+  .first-menu {
+    display: none;
+    padding: 0; }
+  .expand {
+    display: block;
+    text-align: center; }
   .seccion__background {
     display: block; }
   #imgBackground {
