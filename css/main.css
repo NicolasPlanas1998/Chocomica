@@ -543,6 +543,7 @@ legend {
 .seccion__user {
   height: 100%;
   width: 100%;
+  margin-top: 10%;
   position: absolute;
   display: flex;
   justify-content: center; }
@@ -558,12 +559,14 @@ legend {
   .user__inputs label {
     font-weight: 500; }
 
+.bg-user {
+  height: 100vh; }
+
 .inputs__completar {
   border: none;
   padding: 10px;
   border-radius: 15px;
-  outline: none;
-  transition: 0.999s; }
+  outline: none; }
 
 .inputs__completar:hover {
   color: white;

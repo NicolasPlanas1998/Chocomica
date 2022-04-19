@@ -1,8 +1,7 @@
 # CHOCOMICA
-- Trabajo Final Coderhouse -
+- Trabajo Final Front-End Coderhouse -
 
-Objetivos: Sitio web dinamico, responsive y buena visual.
-Tematica: Tienda de tortas ficticia.
+Objetivos: Sitio web dinamico y responsive 
+Tema: Negocio de pasteleria.
 
-Lenguajes utilizados: HTML, CSS , SASS
 

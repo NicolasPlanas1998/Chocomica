@@ -256,6 +256,7 @@ margin: auto;
 
 .seccion__user{
 @include size(100%, 100%);
+margin-top:10%;
 position: absolute;
 display: flex;
 justify-content: center;
@@ -273,12 +274,14 @@ margin: 12px;
         font-weight: 500;
     }
 }
+.bg-user{
+    height: 100vh;
+}
 .inputs__completar{
 border: none;
 padding: 10px;
 border-radius: 15px;
 outline: none;
-transition: 0.999s;
 }
 .inputs__completar:hover{
 color: white;
